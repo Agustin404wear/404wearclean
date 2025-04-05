@@ -1,7 +1,11 @@
-export default function Footer() {
+import React from 'react';
+
+const Footer = ({ navigateToContact }) => {
   return (
-    <footer>
-      <p>© 2025 404wear. Todos los derechos reservados.</p>
+    <footer className="bg-gray-800 p-4 text-center">
+      <button onClick={navigateToContact} className="text-white">Contacto</button>
     </footer>
   );
-}
+};
+
+export default Footer;
